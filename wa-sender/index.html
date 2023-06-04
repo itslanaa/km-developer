@@ -41,19 +41,31 @@ catatan: gunakan format 62 jangan 08" required></textarea>
       promoMessage = encodeURIComponent(promoMessage);
 
       // Membuat tautan WhatsApp untuk setiap nomor pelanggan
+
       var whatsappLinks = sanitizedNumbers.map(function(number, index) {
+
         var link = 'https://wa.me/' + number + '?text=' + promoMessage;
-        return '(' + (index + 1) + ') ' + link;
+
+        return number + ' (<a href="' + link + '" target="_blank">WhatsApp</a>)';
+
       });
 
       // Menampilkan tautan WhatsApp
+
       $('#whatsappLinks').empty();
+
       if (whatsappLinks.length > 0) {
+
         var linksHtml = '<h5>Tautan WhatsApp:</h5>';
+
         whatsappLinks.forEach(function(link) {
-          linksHtml += '<a href="' + link.split(' ')[1] + '" target="_blank">' + link + '</a><br>';
+
+          linksHtml += link + '<br>';
+
         });
+
         $('#whatsappLinks').html(linksHtml);
+
       }
     });
   </script>
