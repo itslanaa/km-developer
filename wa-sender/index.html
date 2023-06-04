@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Whatsapp Sender Link Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Whatsapp Sender Link Generator</h2>
+    <p>by <a href="https://www.km-dev.or.id">KM Developer</a></p>
+    <form id="whatsappForm">
+      <div class="form-group">
+        <label for="customerNumbers">Nomor Customer (Bulk):</label>
+        <textarea class="form-control" id="customerNumbers" rows="5" placeholder="62821xxxxxxx
+62821xxxxxxx
+62821xxxxxxx
+catatan: gunakan format 62 jangan 08" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="promoMessage">Pesan Promosi:</label>
+        <textarea class="form-control" id="promoMessage" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div id="whatsappLinks" class="mt-4"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $('#whatsappForm').submit(function(e) {
+      e.preventDefault();
+      
+      var customerNumbers = $('#customerNumbers').val().trim();
+      var promoMessage = $('#promoMessage').val().trim();
+
+      // Menghilangkan spasi dan karakter lainnya dari nomor pelanggan
+      var sanitizedNumbers = customerNumbers.split(/\s+/);
+
+      // Menyesuaikan pesan promosi
+      promoMessage = encodeURIComponent(promoMessage);
+
+      // Membuat tautan WhatsApp untuk setiap nomor pelanggan
+      var whatsappLinks = sanitizedNumbers.map(function(number, index) {
+        var link = 'https://wa.me/' + number + '?text=' + promoMessage;
+        return '(' + (index + 1) + ') ' + link;
+      });
+
+      // Menampilkan tautan WhatsApp
+      $('#whatsappLinks').empty();
+      if (whatsappLinks.length > 0) {
+        var linksHtml = '<h5>Tautan WhatsApp:</h5>';
+        whatsappLinks.forEach(function(link) {
+          linksHtml += '<a href="' + link.split(' ')[1] + '" target="_blank">' + link + '</a><br>';
+        });
+        $('#whatsappLinks').html(linksHtml);
+      }
+    });
+  </script>
+</body>
+</html>
