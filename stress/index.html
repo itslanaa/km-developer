@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8" />
+<title>Stress Words Generator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+<meta name="robots" content="all,index, follow">
+<meta name="language" content="en">
+<meta property="og:image" content="../assets/img/og-image.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="index.html" />
+<meta name="description" content="Stress banget">
+<meta name="keyword" content="Stress">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/jquery.highlight-within-textarea.css" rel="stylesheet" type="text/css" />
+<style>
+    b, strong {
+        font-weight:bold !important;
+    }
+    </style>
+</head>
+<body>
+
+
+<div class="content-page">
+
+
+<div class="content">
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+<div class="card-box">
+<div class="alert alert-info" role="alert">
+Kumpulan template kata-kata stress, open minded, iklan, dsb.<br/>
+Total : <div id="jumTemp" style="display: inline"></div> Template<br/><br/>
+Inpired by <a href="https://github.com/badruti94/wangy-wangy-generator" target="_blank">this</a>
+</div>
+<div class="form-group col-md-4">
+<label>Template</label>
+<select class="form-control" data-style="btn-light" id="template" name="template">
+<option selected>Pilih Template</option>
+<optgroup label="Wibu">
+<option value="tipe1">SIMP</option>
+<option value="tipe2">Jilat Kaki</option>
+<option value="tipe3">Wangi Wangi</option>
+<option value="tipe4">Watashi</option>
+<option value="tipe10">NELAN LUDAH</option>
+</optgroup>
+<optgroup label="Stress">
+<option value="tipe5">Hina Hina</option>
+<option value="tipe6">Polres</option>
+<option value="tipe7">Iyaudah si iya</option>
+<option value="tipe8">Bebas berpendapat</option>
+<option value="tipe9">Care</option>
+<option value="tipe11">Refund</option>
+<option value="tipe12">Kurang Lucu</option>
+<option value="tipe29">Gausah dengerin org</option>
+<option value="tipe30">Cancer banget, jadinya cringe</option>
+<option value="tipe31">BELUM KETEMU LANGSUNG</option>
+<option value="tipe33">Yang mau daftar Vtube</option>
+<option value="tipe52">Ini bkn settingan</option>
+<option value="tipe55">BUAT APA PANSOS?</option>
+</optgroup>
+<optgroup label="Twitter Open Minded">
+<option value="tipe34">Oke gue tau gue salah</option>
+<option value="tipe35">Aku pengen speak up</option>
+<option value="tipe36">Tidak berniat body shaming</option>
+<option value="tipe37">Gak maksud belain</option>
+<option value="tipe38">Spreading awareness</option>
+<option value="tipe39">That was not funny</option>
+<option value="tipe40">Whatt?? softt?? helllo!!!</option>
+<option value="tipe41">My platform, my choice.</option>
+<option value="tipe42">Bebas berekspresi</option>
+<option value="tipe44">Mbaknya kan alter ya?</option>
+<option value="tipe48">Dasar Warga Twitter!</option>
+<option value="tipe50">Bukan mau ikut campur urusan</option>
+<option value="tipe51">Twitter itu darkwebnya sosmed</option>
+<option value="tipe56">Sorry ya yg ke unfol</option>
+<option value="tipe57">Twitter tuh tempat nya berbaur</option>
+<option value="tipe58">Speak up for once</option>
+<option value="tipe62">Bullying really makes you happy?</option>
+<option value="tipe63">Lebih sehat tanpa vaksin</option>
+<option value="tipe64">Di real life adalah org yg beda</option>
+<option value="tipe65">Knp gue bisa berkomentar kayak gitu</option>
+<option value="tipe66">Ga ngira ini bakal rame</option>
+<option value="tipe68">People think working with me is fun</option>
+<option value="tipe69">Pendapatku bisa jadi sangat bias</option>
+<option value="tipe70">Setiap perkataan pasti ada kesalahan</option>
+<option value="tipe71">Indonesia is a shitty country</option>
+<option value="tipe72">Which words that i said im bullying u?</option>
+</optgroup>
+<optgroup label="Iklan">
+<option value="tipe53">Kiko enak tau</option>
+<option value="tipe54">INDOMY GORENG ACEH</option>
+<option value="tipe59">Permen Milkita</option>
+</optgroup>
+<optgroup label="Generate Only">
+<option value="tipe13">Sarimi isi dua</option>
+<option value="tipe14">JEMPUT PAKE KERANDA!</option>
+<option value="tipe15">Postingan Sampah</option>
+<option value="tipe16">Ngeluh di Medsos</option>
+<option value="tipe17">Didiemin Ngelunjak</option>
+<option value="tipe18">Gampang dket terus sahabatan</option>
+<option value="tipe19">Copas aja bro</option>
+<option value="tipe20">Udah lama suka sama lo</option>
+<option value="tipe21">Caper amat jadi manusia</option>
+<option value="tipe22">MUAK AMA SELERA MUSIK LO</option>
+<option value="tipe23">Pamer di sosial media</option>
+<option value="tipe24">Gk usah main fb sekalian</option>
+<option value="tipe25">Menurut Saya</option>
+<option value="tipe26">Makasih udah berjuang</option>
+<option value="tipe27">Pls educate your self</option>
+<option value="tipe28">Kangen sama kamu</option>
+<option value="tipe32">Fesbuk kebanyakan joke gajelas</option>
+<option value="tipe43">Punya ketikan dijaga bisa gasi?</option>
+<option value="tipe45">Berhenti hujat gua</option>
+<option value="tipe46">Gua ngedown banget sumpah</option>
+<option value="tipe47">Maaf sekiranya gua emg salah</option>
+<option value="tipe49">Makasih yang semangatin aku</option>
+<option value="tipe60">Sebenernya ini pendapatku sih</option>
+<option value="tipe61">Bunda tidak sukak dgn poto kayak itu</option>
+<option value="tipe67">Iya bujang iya</option>
+<option value="tipe73">Liat dulu keadaan badannya</option>
+</optgroup>
+</select>
+</div>
+<div id="form_tipe1-4" style="display: none">
+<div class="form-group col-md-12">
+<label for="simpleinput" id="label_nama">Nama</label>
+<input type="text" name="name" id="name" class="form-control" autocomplete="off" placeholder="Sagiri" required>
+</div>
+</div>
+<div id="form_tipe5" style="display: none">
+<div class="form-row">
+<div class="form-group col-md-6">
+<label for="simpleinput">Nama</label>
+<input type="text" name="name2" id="name2" class="form-control" autocomplete="off" placeholder="Vtube" required>
+</div>
+<div class="form-group col-md-6">
+<label for="simpleinput">Nama Fans</label>
+<input type="text" name="nama-fan" id="nama-fans" class="form-control" autocomplete="off" placeholder="Vtuber" required>
+</div>
+<div class="form-group col-md-6">
+<label for="simpleinput">Status</label>
+<input type="text" name="status" id="status" class="form-control" autocomplete="off" placeholder="Penyelamat Ekonomi Bangsa" required>
+</div>
+<div class="form-group col-md-6">
+<label for="simpleinput">Kekurangan Hater</label>
+<input type="text" name="kekurangan" id="kekurangan" class="form-control" autocomplete="off" placeholder="Ijazah" required>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-md-6">
+<label for="simpleinput">Kelebihan</label>
+<textarea placeholder="menggaji puluhan juta perbulan, bikin orang miskin jadi mendadak kaya, bikin bisa beli rumah dalam sebulan" rows="10" cols="160" id="kelebihan" name="kelebihan" class="form-control" required></textarea>
+</div>
+</div>
+</div>
+<div id="form_tipe6" style="display: none">
+<div class="form-group col-md-12">
+<label for="simpleinput">Nama 2</label>
+<input type="text" name="f6_name2" id="f6_name2" class="form-control" autocomplete="off" placeholder="Keqing" required>
+</div>
+<div class="form-group col-md-12">
+<label for="simpleinput">Jenis Karakter</label>
+<input type="text" name="jenis_karakter" id="jenis_karakter" class="form-control" autocomplete="off" placeholder="Kartun 2D" required>
+</div>
+<div class="form-group col-md-12">
+<label for="simpleinput">Status Idola</label>
+<input type="text" name="status_idola" id="status_idola" class="form-control" autocomplete="off" placeholder="Waifu" required>
+</div>
+</div>
+<div id="form_tipe8" style="display: none">
+<div class="form-group col-md-12">
+<label for="simpleinput" id="label_panggilan">Panggilan</label><br/>
+<div class="radio radio-info form-check-inline">
+<input type="radio" id="mas" value="mas" name="panggilan" checked>
+<label for="inlineRadio1" id="label_mas"> Mas </label>
+</div>
+<div class="radio form-check-inline">
+<input type="radio" id="mbak" value="mbak" name="panggilan">
+<label for="inlineRadio2" id="label_mbak"> Mbak </label>
+</div>
+</div>
+</div>
+<div class="form-group" id="hasilnya" style="display: none">
+<label class="col-md-2 col-form-label" for="simpleinput">Hasil</label>
+<textarea placeholder="Enter your text here..." rows="10" cols="160" id="hasil" name="hasil" class="form-control" required></textarea>
+</div>
+<button class="btn btn-primary" onclick="hajar()">Generate</button>
+<button class="btn btn-outline-primary kopi" type="button" data-clipboard-target="#hasil">Copy</button>
+<div class="form-group" id="tercopy" style="display: none;">
+<p>Tercopy!</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row" id="iklan">
+<div class="col-md-12">
+<div class="card-box">
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt">
+                                </script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3798856076467852" data-ad-slot="8194451535" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="text-center card-box">
+<div class="text-center" id="iklan2">
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3798856076467852" data-ad-slot="7000281927" data-ad-format="auto"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+</div> </div>
+</div>
+</div>
+</div> 
+</div> 
+
+<footer class="footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6">
+<script>
+                                document.write(new Date().getFullYear())
+                            </script>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+
+
+
+</div>
+
+
+<script type="text/javascript">
+    function downloadJSAtOnload(){var e=document.createElement("script");e.src="../../cdn.jsdelivr.net/gh/Arlina-Design/quasar%40master/arlinablock.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
+</script>
+
+<script src="assets/js/vendor.min.js"></script>
+
+
+
+<script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+
+
+<script src="assets/js/app.min.js"></script>
+<script src="assets/js/jquery.highlight-within-textarea.js"></script>
+<script>
+        $(document).ready(function () {
+            $("#jumTemp").html("<b>"+$('#template option').length+"</b>");
+
+            const defaultNama = "Nama",
+                placeholderNama = "Sagiri",
+                labelPanggilan = "Panggilan",
+                labelMas = "Mas",
+                labelMbak = "Mbak",
+                valueMas = "mas",
+                valueMbak = "mbak";
+
+            $('#template').on('change', function () {
+                if (this.value == "tipe1" ||
+                    this.value == "tipe2" ||
+                    this.value == "tipe3" ||
+                    this.value == "tipe4" ||
+                    this.value == "tipe10" ||
+                    this.value == "tipe29" ||
+                    this.value == "tipe31" ||
+                    this.value == "tipe52" ||
+                    this.value == "tipe55" ||
+                    this.value == "tipe64"
+                    ) {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+
+                    $("#label_nama").text(defaultNama);
+                    $("#name").attr("placeholder", placeholderNama);
+
+                    $("#form_tipe1-4").show();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").hide();
+                } else if (this.value == "tipe5") {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+
+                    $("#label_nama").text(defaultNama);
+                    $("#name").attr("placeholder", placeholderNama);
+
+                    $("#form_tipe1-4").hide();
+                    $("#form_tipe5").show();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").hide();
+                } else if (this.value == "tipe6") {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+
+                    $("#label_nama").text(defaultNama);
+                    $("#name").attr("placeholder", placeholderNama);
+
+                    $("#form_tipe1-4").show();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").show();
+                    $("#form_tipe8").hide();
+                } else if (this.value == "tipe7") {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+
+                    $("#label_nama").text(defaultNama);
+                    $("#name").attr("placeholder", "Nama panggilan target");
+
+                    $("#form_tipe1-4").show();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").hide();
+                } else if (
+                    /* Mas / Mbak */
+                    this.value == "tipe8" || 
+                    this.value == "tipe12" || 
+                    this.value == "tipe36") {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+
+                    $("#label_panggilan").text(labelPanggilan);
+                    $("#label_mas").text(labelMas);
+                    $("#label_mbak").text(labelMbak);
+                    $("#mas").val(valueMas);
+                    $("#mbak").val(valueMbak);
+
+                    $("#form_tipe1-4").hide();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").show();
+                } else if (this.value == "tipe9") {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+
+                    $("#label_nama").text(defaultNama);
+                    $("#name").attr("placeholder", "Nama kamu");
+
+                    $("#form_tipe1-4").show();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").hide();
+                } else if (this.value == "tipe11") {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+
+                    $("#label_nama").text("Nama Jasa");
+                    $("#name").attr("placeholder", "Genshin, Netflix");
+
+                    $("#form_tipe1-4").show();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").hide();
+                } else if (
+                    /* Generate doang*/
+                    this.value == "tipe13" ||
+                    this.value == "tipe14" ||
+                    this.value == "tipe15" ||
+                    this.value == "tipe16" ||
+                    this.value == "tipe17" ||
+                    this.value == "tipe18" ||
+                    this.value == "tipe19" ||
+                    this.value == "tipe20" ||
+                    this.value == "tipe21" ||
+                    this.value == "tipe22" ||
+                    this.value == "tipe23" ||
+                    this.value == "tipe24" ||
+                    this.value == "tipe25" ||
+                    this.value == "tipe26" ||
+                    this.value == "tipe27" ||
+                    this.value == "tipe28" ||
+                    this.value == "tipe32" ||
+                    this.value == "tipe34" ||
+                    this.value == "tipe35" ||
+                    this.value == "tipe37" ||
+                    this.value == "tipe38" ||
+                    this.value == "tipe39" ||
+                    this.value == "tipe40" ||
+                    this.value == "tipe41" ||
+                    this.value == "tipe43" ||
+                    this.value == "tipe44" ||
+                    this.value == "tipe45" ||
+                    this.value == "tipe46" ||
+                    this.value == "tipe47" ||
+                    this.value == "tipe48" ||
+                    this.value == "tipe49" ||
+                    this.value == "tipe50" ||
+                    this.value == "tipe51" ||
+                    this.value == "tipe53" ||
+                    this.value == "tipe54" ||
+                    this.value == "tipe56" ||
+                    this.value == "tipe57" ||
+                    this.value == "tipe58" ||
+                    this.value == "tipe59" ||
+                    this.value == "tipe60" ||
+                    this.value == "tipe61" ||
+                    this.value == "tipe62" ||
+                    this.value == "tipe63" ||
+                    this.value == "tipe65" ||
+                    this.value == "tipe66" ||
+                    this.value == "tipe67" ||
+                    this.value == "tipe68" ||
+                    this.value == "tipe69" ||
+                    this.value == "tipe70" ||
+                    this.value == "tipe71" ||
+                    this.value == "tipe72" ||
+                    this.value == "tipe73"
+                    ) {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+                    $("#form_tipe1-4").hide();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").hide();
+                } else if (this.value == "tipe30") {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+
+                    $("#label_nama").text("Kata Trend");
+                    $("#name").attr("placeholder", "Ingfo, Okoklh, Anjay");
+
+                    $("#form_tipe1-4").show();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").hide();
+                } else if (this.value == "tipe33") {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+
+                    $("#label_nama").text("Pencapaian");
+                    $("#name").attr("placeholder", "Mobil, Rumah, Cilok");
+
+                    $("#form_tipe1-4").show();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").hide();
+                } else if (this.value == "tipe42") {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+
+                    $("#label_panggilan").text("Gender");
+                    $("#label_mas").text("Cowok");
+                    $("#label_mbak").text("Cewek");
+                    $("#mas").val('cowok');
+                    $("#mbak").val('cewek');
+
+                    $("#form_tipe1-4").hide();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").show();
+                } else {
+                    $("#hasilnya").hide();
+                    $("#tercopy").hide();
+                    $("#form_tipe1-4").hide();
+                    $("#form_tipe5").hide();
+                    $("#form_tipe6").hide();
+                    $("#form_tipe8").hide();
+                }
+            });
+        });
+
+        function hajar() {
+            const temp = $('#template').val();
+
+            let nama = $('#name').val(),
+                nama2 = $('#name2').val(),
+                nama_fans = $('#nama-fans').val(),
+                status = $('#status').val(),
+                kekurangan = $("#kekurangan").val(),
+                kelebihan = $("#kelebihan").val(),
+                jenis_karakter = $('#jenis_karakter').val(),
+                status_idola = $('#status_idola').val(),
+                panggilan = $("[name='panggilan']:checked").val(),
+                temp_text;
+
+            if (temp == "tipe1") {
+                temp_text =
+                    `Buruan, panggil gue SIMP, ato BAPERAN. ini MURNI PERASAAN GUE. Gue pengen genjot bareng ${nama}. Ini seriusan, suaranya yang imut, mukanya yang cantik, apalagi badannya yang aduhai ningkatin gairah gue buat genjot ${nama}. Setiap lapisan kulitnya pengen gue jilat. ` +
+                    `Saat gue mau crot, gue bakal moncrot sepenuh hati, bisa di perut, muka, badan, teteknya, sampai lubang burit pun bakal gue crot sampai puncak klimaks. Gue bakal meluk dia abis gue moncrot, lalu nanya gimana kabarnya, ngrasain enggas bareng saat telanjang. ` +
+                    `Dia bakal bilang kalau genjotan gue mantep dan nyatain perasaannya ke gue, bilang kalo dia cinta ama gue. Gue bakal bilang balik seberapa gue cinta ama dia, dan dia bakal kecup gue di pipi. Terus kita ganti pakaian dan ngabisin waktu nonton film, sambil pelukan ama makan hidangan favorit. ` +
+                    `Gue mau ${nama} jadi pacar, pasangan, istri, dan idup gue. Gue cinta dia dan ingin dia jadi bagian tubuh gue. Lo kira ini copypasta? Kagak cok. Gue ngetik tiap kata nyatain prasaan gue. Setiap kali elo nanya dia siapa, denger ini baik-baik : DIA ISTRI GUE. Gue sayang ${nama}, dan INI MURNI PIKIRAN DAN PERASAAN GUE.`;
+            } else if (temp == "tipe2") {
+                nama = nama.toUpperCase();
+                temp_text =
+                    `GW BENAR-BENAR PENGEN JILATI KAKI ${nama}. GW PENGEN BANGET MENJILAT SETIAP BAGIAN KAKINYA SAMPAI AIR LIUR GW BERCUCURAN KAYAK AIR KERINGAT LALU NGENOD DENGANNYA SETIAP HARI SAMPAI TUBUH KITA MATI RASA YA TÜHAN. GW INGIN MEMBUAT ANAK-ANAK DENGAN ${nama} ` +
+                    `SEBANYAK SATU TÌM SEPAK BOLA DAN MEMBUAT SATU TIM SEPAK BOLA LAINNYA UNTUK MELAWAN ANAK-ANAK TIM SEPAK BOLA PERTAMA GW YANG GW BUAT SAMA ${nama}. GW PENGEN MASUK KE SETIAP LUBANG TUBUHNYA, MAU ITU LUBANG HIDUNG, LUBANG TELINGA, RONGGA MATA MAUPUN PUSAR, KECUALI PORI-PORI KULIT. ` +
+                    `KEMUDIAN GW AKAN MENJADIKANNYA MANUSIA YANG TIDAK BISA HIDUP KALO TIDAK GW KENTOG SETIAP HARI. DAN KALAU GUA DISEPONG GUA RELA KONTL GUA PUTUS.`;
+            } else if (temp == "tipe3") {
+                nama = nama.toUpperCase();
+                temp_text =
+                    `${nama} ${nama} ${nama}${nama.substr(nama.length - 1).repeat(4)} ❤️ ❤️ ❤️ WANGI WANGI WANGI WANGI HU HA HU HA HU HA, aaaah baunya rambut ${nama} wangi aku mau nyiumin aroma wanginya ${nama} AAAAAAAAH ~ Rambutnya.... aaah rambutnya juga pengen aku elus-elus ~~~~ AAAAAH ${nama} ` +
+                    `keluar pertama kali di anime juga manis ❤️ ❤️ ❤️ banget AAAAAAAAH ${nama} AAAAA LUCCUUUUUUUUUUUUUUU............ ${nama} AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️apa ? ${nama} itu gak nyata ? Cuma HALU katamu ? nggak, ngak ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK PEDULI BANGSAAAAAT !! ` +
+                    `GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK PEDULI. ❤️ ❤️ ❤️ ${nama} gw ...${nama} di laptop ngeliatin gw, ${nama} .. kamu percaya sama aku ? aaaaaaaaaaah syukur ${nama} aku gak mau merelakan ${nama} aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH GUA MASIH PUNYA ${nama} SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAAH`;
+            } else if (temp == "tipe4") {
+                temp_text =
+                    `watashi mencintai ${nama} dengan tulus dan penuh kasih sayang, watashi tidak tahan dengan hinaan kalian yg kalian berikan terhadap ${nama}. ${nama} selalu menangis dikamarnya setiap malam karena hinaan kalian. "shine, shine, shine" hanya kata itulah yang ada dipikiran watashi tpi watashi hanya manusia lemah yang tak berdaya jika dikroyok banyak orang. ` +
+                    `Suatu saat kemudian ada orang biadab memfitnah ${nama} dengan membuat video skandal lalu menyebarkannya di website pornografi. Amarah dan aura merah menyelimuti watashi tanpa disadari darah menetes dari mata watashi secepat kilat watashi menengok cermin lalu watashi melihat rambut watashi belahan menjadi putih lalu ada kagune di punggung watashi lalu sosok kaneki muncul ` +
+                    `dari dalam cermin tanpa berkata apapun dia memberikan maskernya dan langsung pergi melompati jendela. Watashi langung mencuci masker itu karena bau tengik mulut kaneki membekas di masker itu. Perut Watashi tiba tiba merasa lapar, watashi mencoba indomie buatan ${nama} lalu watashi muntah muntah 😖, lalu terlintas dipikiran watashi jadi berita itu benar ! ` +
+                    `ghoul memang harus memakan manusia karena watashi masih mempunya jiwa manusia akhirnya watashi memakan tangan sendiri. Meskipun tidak menghilangkan rasa lapar setidaknya ini cukup untuk berdiri lalu memangsa siapapun yang menghina istri watashi. no mercy no cry u must die, watashi tak segan segan membunuh kalian jika kalian menghina ${nama}.`;
+            } else if (temp == "tipe5") {
+                nama = nama2.toUpperCase();
+                nama_fans = nama_fans.toUpperCase();
+                status = status.toUpperCase();
+                kekurangan = kekurangan.toUpperCase();
+                kelebihan = kelebihan.toUpperCase();
+
+                temp_text =
+                    `MAKSUD LO APA HINA2 ${nama} HAH!? GUE MESTI KASIH TAU YA ${nama} ITU ${status}! ${nama} ITU ${kelebihan}. ${kekurangan} LU GAADA APA2NYA DIBANDING SAMA ${nama}. ${nama_fans} BAKAL NGINCAR LO SAMPE ELO GABAKAL ADA DI BUMI INI! CAMKAN KATA KATA ${nama_fans}!!!! LU PIKIR LU BISA SEENAK NYA NGATAIN ${nama} BEGITU AJA? ` +
+                    `PIKIR ULANG NJING! PAS GUA NGETIK INI GUA UDAH HUBUNGIN DAN MEMANGGIL SELURUH ${nama_fans} DI SEKOJUR DUNIA DAN MUKA LU UDAH GW LACAK BUAT UU ITE! ${nama_fans} ADA DIMANA-MANA KAPAN AJA DAN BISA BULLY ELU DENGAN SEGALA CARA, COBA AJA LO GAK NGEHINA ${nama} ATAU LU BISA JAGA MULUT. LO NGGA BISA KAN? ${nama_fans} BAKAL HANCUR SAMA KAWAN2 LO YANG LAIN YANG HINA ${nama}, LU BAKAL MATI`;
+            } else if (temp == "tipe6") {
+                nama2 = $('#f6_name2').val();
+
+                temp_text =
+                    `Ok, gua minta maaf. Tapi jangan bawa gua ke polres plis. Gua cuman bercanda pengen liat ekspresi lu pissed off. Tapi klo lu gak terima, gua janji gua ga bakal ngehina ${nama} buat lu. Tapi sadar sendiri aja, lu udh gede tapi kok masih fanatik sama ${jenis_karakter}. ` +
+                    `Nanti sedikit dicandain malah marah, coba jadi orang dewasa dong. Lu percuma jadi dah gede tapi marah-marah sambil melapor kepada pihak yang berwajib cuma karena ${status_idola}nya dilecehkan. Gimana sih nanti lo paling ladur lagi kek ${nama2} kemaren. Lo dulu puja-puja ${nama2} eh sekarang malah ngebash ${nama2}, ` +
+                    `sia-sia buang energi aja. Tak kirain lo gak kayak nopan, eh tau-taunya malah sama atau lebih buruknya melebihi dia. Duh.` +
+                    `\nTapi sekali lagi gua minta maaf, kalo lo gak nerima gua tanggungin aja. Karena ini memang perbuatan gua. Sumimasen.` +
+                    `\nActually, stop this shit. Gua ladur tapi gak terlalu memuja-muja ${status_idola}ku sebelumnya. Bagaimana lu? Udah ladur tapi sebelumnya memuja-muja ${nama2} dengan keras. Lebih baik lo yang istirahat, lu kelamaaan diam diinternet. Gimana kalo lu yang keluar rumah dan tarik napas? Daripada muja ${status_idola} dirumah sendirian ngenolife mending keluar rumah main sama teman (eh lu kan ga punya teman, so sad).` +
+                    `Sebenarnya sih gua agak muak ama kelakuan lo yang terlalu fanatik sama ${status_idola}, tapi gua maklumin.`;
+            } else if (temp == "tipe7") {
+                temp_text =
+                    `Iyaudah si iya ${nama}, iya. Rekening lu paling banyak, temen2 lu pada high, idup lu paling makmur di sosial media. Gue mah cuman sampah di friendlist lo, pokonya lu yg paling best dah`;
+            } else if (temp == "tipe8") {
+                temp_text =
+                    `Punten ${panggilan}, maaf banget kalo ketikan saya salah🙏🙏ini sosial media ${panggilan}, orang bebas berpendapat. Lagian kalo dia begitu emang apa ruginya buat ${panggilan} nya🙏kalo saya perhatiin malah ${panggilan}nya yang kurang kerjaan maaf setiap hari saya lihat ${panggilan}nya online terus, kaya gapunya kegiatan di kehidupan aslinya, ` +
+                    `terus spam komen nggak jelas kaya orang maaf ya ${panggilan} kaya org nggak punya akal sehat gitu...atau bahasa kasarnya stres🙏 maaf saya unfriend ya kurang berkenan berteman sama ${panggilan}nya dan sedikit risih dengan postingan ngga jelas ${panggilan} nya🙏🙏`;
+            } else if (temp == "tipe9") {
+                temp_text =
+                    `Hallo gua ${nama}, disini gw cuma mau bilang siapapun lo, i just wanna let u know ur a amazing person ❤, sehat terus yaaa.. Jangan insecure inget, masih banyak yang pengen rasain jadi lo. Oh iya, jangan sering-sering begadang yaa gabaik buat kesehatan, jangan lupa jaga pola makan. U deserve more love, jangan galau terus yaa! ` +
+                    `Tapi please kalo lo lagi sedih/ngerasa useless don't do the stupid things or anything.`;
+            } else if (temp == "tipe10") {
+                nama = nama.toUpperCase();
+                temp_text =
+                    `${nama} PLEASE TIAP HARI LU BIKIN GUA NELAN LUDAH KARNA KESEKSIAN LU TIADA TARA, TIAP HARI GW NGEBAYANGIN ELU ADA DIDEPAN GW DAN DIPANGKUAN GUE, TIAP HARI GW NGEBAYANGIN LU JADI WAIFU GW, NGEBAYANGIN KALO LU LAGI MASAK DAN TIBA2 GW MASUKIN DARI BELAKANG. ${nama}${nama.substr(nama.length - 1).repeat(4)} GW UDAH GATAHAN NGELIAT WAJAH LO YG IMUT DAN SIAP DI CROT DIMUKA PLEASE SEKALI LAGI GW MINTA SAMA LU LIATIN KETEK LU YG BERKERINGAT,` +
+                    `GW UDAH GASABAR NGEJILAT SELURUH TUBUH LU TERUTAMA KETEK SAMPAI MULUT GW KERING, PLEASE ${nama} BE MY WAIFU`;
+            } else if (temp == "tipe11") {
+                nama = nama.toUpperCase();
+                txt =
+                    `BANG TOLONG BANG REFUND ${nama} SAYA BANG PLIS BANG ITU DUIT HASIL KERJA KERAS SAYA BANG, AYO BANG PLISSS RELA GA MAKAN MALAH KEBANNED BANG PLIS`;
+                temp_text = `${txt}\n${txt}\n${txt}`
+            } else if (temp == "tipe12") {
+                temp_text =
+                    `Sorry ${panggilan} kali ini gw nggak ketawa dengan status lo🙏 kurg lucu dikit tpi gw selalu support lu kok ${panggilan}🙏🙏 jangan nyerah buat melucu terus ${panggilan} ttep stay at home`;
+            } else if (temp == "tipe13") {
+                temp_text =
+                    `menurut saya bukannya mau sok tau atau gimana tapi ini hanya berdasarkan pengetahuanku yang sangat minim, ini juga gada maksud buat nyinggung siapapun, jadi tolong buat semuanya kalau ada perbedaan pendapat bahwa sarimi isi dua menurut saya hanya isi satu setengah`;
+            } else if (temp == "tipe14") {
+                temp_text =
+                    `GW SEBAGAI CEWEK NORMAL PENGEN NGERESPOND PERTANYAAN YANG NGESPAM DI BERANDA!IYA GW MALU SEBAGAI CEWEK KALO DI JEMPUT PAKE KERANDA!TERUS KENAPA?LO MAU BILANG GW MATRE?HEH MIKIR PAKE OTAK NYET!CEWE JAMAN SEKARANG MANA ADA YANG MAU DIJEMPUT PAKE TEMPAT TIDUR ORANG MENINGGAL GOBLOK,` +
+                    `LU BISA MIKIR GAK SIH?PLEASE DEH HAL KAYA GINIAN GAUSAH DIJADIN JOKE,CRINGE LU NGERTI GK?HERAN SAMA ORANG2 KEK GINI PERTANYAAN KEK GINI AJA DIBIKIN RAME,SUMPAH GW UNFRIEND KALO NGELIAT FRIENDLIST GW YG UPDATE STATUS GINIAN LAGI,PLEASE LA EDUCATE YOUR SELF LIL BITCH!`;
+            } else if (temp == "tipe15") {
+                temp_text =
+                    `udah gw like postingan sampah lu,seneng kan lu kalo banyak like?status lu copasan semua geli gw lama2 mending kalo lu buat status mikir,nah ini copasan cuman bikin ngeflood doang tai,orang tolol kaya lu rata2 nolep gapunya temen wkwk,mangkanya caper gitu copas status org mau viral jalur copas ya lu tot?`;
+            } else if (temp == "tipe16") {
+                temp_text =
+                    `Sumpah saat ini gw heran sama tipikal manusia yang selalu ngeluh di medsos maupun di real "duch beban hidup gw berat banget ya, pengen mati aja rasanya"` +
+                    `\nPadahal saat diketauhui dan dicari tahu benang merahnya, kenyataanya dia sendiri yang ngecreate masalah untuk hidupnya dan dia sendiri yang memperibet jalan hidupnya, sumpah aneh dah.` +
+                    `\ndan ada lagi yg jauh lebih lucu, dia punya kesempatan untuk memperbaiki masalah hidupnya tapi gak mau, malah pengenya ngeluh terus, aneh banget anyin`;
+            } else if (temp == "tipe17") {
+                temp_text =
+                    `ngentot lo bisa diem ga sehari aja goblok,sumpah lama"lo didiemin ngelunjak asli\nkemarin udh gw tegor lu iya"doang kaya org tolol,bukannya berhenti spam ini malah makin jadi` +
+                    `\nmau lo apasih anjing?gw cari alamat lo bener dah sampe ketemu,gw samperin rumah lo trus gw kasih tau kelakuan anaknya gimana di sosmed\nngentot dikasih tau malah ngelunjak`;
+            } else if (temp == "tipe18") {
+                temp_text =
+                    `Liat org kok keknya gampang bgt dket terus sahabatan tbtb bkin janji bakal temenan ampe tua, infact g kontekan lama juga pas lama g ketemu malah jdi kek org asing. ` +
+                    `Ada juga yg temennya banyak bgt tiap hari main ,nongkrong kalo g tmennya main ke kosan. Lah gw, mau masuk suatu circle aja observasinya lama , nerima ajakan juga beberapa kali nolak join dulu baru blg iya. ` +
+                    `Gw kek gini pas sekalinya dpt tmen yg kek lumayan dket lah, bisa d blg gw care, sayang atau prnah kek feeling nya ngena gtu kalo d tinggal sedih bgt. Ini jg salah satu alasan w selektif bgt. Cuma ttp heran, ` +
+                    `manusia lain kok kek bisa gampang akrab trus ngeklaim seseorg itu penting d hidup mereka , gw bersikap humble mah bisa aja cuma kalo lgsg ada ikatan gtu mikir" lg gw. Kadsng mikir mungkin ini sslah satu hal yg bkin gw nyia"in masa muda jg, krna susah bergaul`;
+            } else if (temp == "tipe19") {
+                temp_text =
+                    `Copas aja bro semua, semua hal yang gue rangkai, yang gue pikirin, lu copas aja terus kirim lagi ke grup-grup yang lain, buat apa sih? Lu gak jelas ngentot, gue nulis2 gitu gue pengen curhat, lu malah olok-olokin curhatan gua, gua gak masalah sih, ` +
+                    `cuman lu gada kerjaan banget anjing, mending lu kerjain hal yang lebih bermanfaat, berfaedah, gosah try hard jadi king komedi, lu ngentot cringe sumpah!`;
+            } else if (temp == "tipe20") {
+                temp_text =
+                    `sebenernya gua uda lama suka sama lo. gua mendam perasaan ini lama banget, serius g boong. susah mau ngungkapin, bingung. karna gua takut bakal buat lo marah. dan  itu bakal jd momen memalukan bagi gua. sumpah, malunya sampe ke tulang rusuk. ` +
+                    `tapi sekarang tergantung lo aja. gua uda gabisa kata2 lg, gua tau ini cuma halu. cuma bisa mencintai tanpa memiliki. tapi pernah g si lo, suka sama orang ga pernah liat mukanya secara langsung. tapi meanwhile, lo bakal liat mukanya, walau cuma foto. ` +
+                    `rasa cinta gua ke lo ya kaya gitu, tapi serius kali ini beda banget. gua beneran suka sama lo. gua jelek, gua insecure. gua ga berani bilang langsung ke lo. lo keren, beda sama gua. gua dekil, pecicilan. gua malu banget asli. cuma bermodalkan cinta. ` +
+                    `idup gua serasa ga guna. gua emang bener2 suka sm lo, gua gatau tanggapan lo bakal gimana. kalo lo nerima cinta gua, mungkin kita bakal lanjut. tapi ngumpulin mental buat bilang dan ngungkapin ke lo itu susah. yauda gua lanjut aja ke topik. ` +
+                    `sebenernya lo mau ga si jd pacar gua? lo mau jadian sm gua yg apa adanya? kalo lo yes, kita lanjutin hubungan ini. kalo lo say "no" yaudah gua bakal menghilang dr kehidupan lo. gatau sampe kapan. karna gua malu nanggung perasaan yg udah ditolak. ` +
+                    `malu banget serius. gua ngetik panjang lebar gini semoga lo baca sampe abis dan dicermati. gua uda cape, inget jaga kondisi. intinya gua sayang sama lo, lo baik banget. beda sama yg lain. gudlak syg. kalo lo nolak gua, ok gpp. gua uda biasa tersakiti, uda biasa kena php. intinya 1 hal yg wajib lo tau, cinta gua tulus ke lu. ok.`;
+            } else if (temp == "tipe21") {
+                temp_text =
+                    `Gausha nyindir gini bang,caper amat lo jadi manusia\nkalo gasuka sama perilaku gw langsung chat gw aja gausah nyindir"kek gini kontol.\ncowok kok kaya cewek kelakuannya potong tuh titit anjing kalo gasuka sama perkataan gw pm gw aja anjing`;
+            } else if (temp == "tipe22") {
+                temp_text =
+                    `SUMPAH BRO GUA UDAH MUAK AMA SELERA MUSIK LO TIAP KITA NGUMPUL LO MUTER LAGU LAGU JEPANG AMA KOREA YANG ADA GUA MALU BRO PLEASE BRO JAUHIN AJA GUA LO LAKI DEMEN LIAT PLASTIK PLASTIK JOGET APALAGI LO KALAU NONGKRONG SUKA NONTON KARTUN KARTUN JEPANG GINI BRO LO KALAU NONGKRONG JUJUR AJA NIH MALU MALUIJ DAH CUPU NONTON ANIME PENGGEMAR KPOP MAAF YA BRO LO GAK USAH IKUT NONGKRONG`;
+            } else if (temp == "tipe23") {
+                temp_text =
+                    `emang sosial media buat apalagi selain buat pamer ? Emang lo gapernah pamer di sosial media ya bro? Kasian gw sama lo bro sumpah, kalau semisalkan lo selalu nyinyirin orang terus mending lo join lambe turah bro, lu juga nyinyirin orang yang upload foto di hotel cuman ikut ikutan kan orang kan bro ? Biar lo keliatan kek master master tai kucing kan bro, padahalma lu cuman pepek palembang ane`;
+            } else if (temp == "tipe24") {
+                temp_text =
+                    `Well ya berhubung banyak yang gak suka sama gw yaudah gw mending gk usah main fb sekalian,maaf selama ini gw ngotorin beranda kalian dengan post post gw yang gk berguna sama sekali,jujur gw ngepost gituan karrna gw cuman ingin menghibur semata walaupun emang jatuhnyq ke cringe ya gk masalah selama itu ada yg merasa ` +
+                    `terhibur gw senang artinya gw berhasil ngehibur orang walopun jaminannya harga diri gw sendiri yang permaluin,Jadi ya sekali lagi gw mau bilang dari hati gw yang paling dalam gw cuman mau minta maaf sebesar besarnya sama kalian Terima Kasih`;
+            } else if (temp == "tipe25") {
+                temp_text =
+                    `Jadi gini ya menurut saya, ini menurut sy lho\nGk tau klo menurut orng lain karna orng lain tdk sm dengan sy. Jd ini menurut sy aj,bkn menurut orang lain ,karna ini asli dari pemikiran sy aj ya. Jd pemikiran sy bgni lho` +
+                    `\nSy itu berfikir kl pemikiran sy tdk sama dengan pemikiran orng lain. Kl pemikiran sy sama dengan orang lain berarti orng lain berfikir sm dengan sy ya kan . Jd ya gt tadi lah bahwa fikiran sy tdk sama dengan orang lain` +
+                    `\nApa yg orang lain fikirkan blm tentu sm dengan sy\nJangan di samakan ya ,sy berfikir bgni blm tentu sm dengan orang lain.\nYa iyalan ini kan menurut sy bkn menurut orang lain. Harus di garis bawahi bahwa ini cuma pemikiran sy sendiri` +
+                    `\nKarna menurut sy tdk ada yg perlu sy sampaikan,jadi menurut sy ,sy akhiri pembahasan ini.\nItu aj si menurut sy . Terimakasih`;
+            } else if (temp == "tipe26") {
+                temp_text =
+                    `hai, aku tau kita gapernah ketemu atau tak saling kenal, tapi aku cuma pengen bilang makasih banyak udah berjuang sampai saat ini yaa, aku gatau latar belakang kamu apa, apa masalah kamu dan apa kondisi kamu saat ini tapi aku tau itu semua berat untuk dijalani, ` +
+                    `aku memang bukan seorang psikolog, tapi aku bisa mengerti dan aku tau caranya menyemangati seseorang, Tuhan selalu ada kok disisi kamu, dunia emang ga berputar buat kita doang, tapi disaat kamu lagi cape dan pengen banget berhenti buat berjuang itu juga ga masalah kok, ` +
+                    `yang penting disaat kamu udah siap kamu bisa untuk jalanin lagi, gausah buru-buru melangkah, hidup kamu bukan kompetisi kok.`;
+            } else if (temp == "tipe27") {
+                temp_text =
+                    `pls educate your self,i deserve it\nkalk lu gasuka sama kaum kita plis jauh2 heran gw masih ada pemikiran kaya lo,open minded sebentar aja apa ga bisa?gw kaya gini nyaman kok,lah knapa lu yg ribet?only god can judge me lo ga tau apa aja hal yg udah gw lewatin`;
+            } else if (temp == "tipe28") {
+                temp_text =
+                    `halo, lagi sibuk ya? aku dari kemarin pengen chat kamu, tapi takut ga di bales. mau nelfon takut ganggu, jadi aku ketik disini aja, ya? sebenarnya. aku gapapa sih, cuma kangen aja ngobrol sama kamu , kangen di kabarin sama kamu, kangen sama suara kamu. ` +
+                    `aku gatau ya, ini seharusnya aku ngerasain kayak gini atau baik nya gaperlu? menurutmu, aku harus apa? tapi, selama kita jauh, aku ngerasa ada yang hilang dan ku pikir, kamu harus tau itu yang mungkin harusnya ga kayak gini, tapi ini semua di luar kendali aku. tapi kalau kamu ga bisa ngerti, ` +
+                    `ya gapapa juga sih, karena aku sendiri bingung juga ngejelasinnya gimana ke kamu\njangan lupa sehat dan senang ya. di jaga jangan sampe ga seimbang. jadi, kalau kamu ga ada waktu buat baca ketikan dari aku ini, nanti waktu kamu udah ga ribet aja, mungkin waktu udah mau tidur, ` +
+                    `terserah sih dan aku cuma mau bilang kalo aku janji sama kamu, aku bakal baik baik aja, ada atau ga ada kamu, ya mungkin ga bakal langsung 100% sih. tapi ku pikir, gapapa di coba pelan pelan, karena aku tau selama ini perasaanku cuma bisa mengganggu kamu dan kayaknya, kamu capek ya aku gangguin terus? ` +
+                    `Kamu punya prioritas yang lebih kamu utamakan sekarang, dan aku ga akan pernah masuk list penting itu, jadi. maaf untuk itu, ya.`;
+            } else if (temp == "tipe29") {
+                temp_text =
+                    `${nama} gausah dengerin org yg ngejelekkin kamu, yakin banyak org yg lebih apresiasi kamu dari segala aspek kamu ganteng u're worth it and fuckin' gorgeous 💗 don't let them get you down!! semangatt okay ✨💗💗 i hope u get betterr luv! xx <33`;
+            } else if (temp == "tipe30") {
+                const tahun = new Date().getFullYear();
+                temp_text =
+                    `Wkwk ngakak aja gue mah kalau sampai saat ini masih ada orang yang pakai kata "${nama}". Sadar dong bos, sekarang itu udah pertengahan tahun ${tahun} dan lo masih pakai kata "${nama}"? Haha norak banget sumpah gak bohong, keliatannya lo itu cancer banget, jadinya cringe.`+
+                    `Maaf-maaf aja nih ya, bukannya gue sok elit, tapi ya emang kenyataan gitu mau gimana lagi. Udah lah bos, jangan pakai kata "${nama}" lagi, gak guna, lagian lo itu udah gede masih aja pakai kata "${nama}".`+
+                    `Kalau lo gak mau keliatan cancer lalu jadinya cringe makanya jangan pakai kata "${nama}" lagi. Hey, sadar hey. Apa mau lo hidup selamanya keliatan cancer jadinya cringe gara-gara pakai kata "${nama}" wkwk.`+
+                    `Pokoknya kalau gue liat friends list ada yang pakai kata "${nama}" bakal gue unfriend. Dikatain sombong? Bodo amat lah wkwk.`;
+            } else if (temp == "tipe31") {
+                temp_text =
+                    `Orang yang ngetawain dan maki-maki ${nama} ini mungkin dia BELUM KETEMU LANGSUNG. Sebaik dan sehumble itu dia sama orang baru, salah satunya ke gw yg awalnya ngamuk sama dia malah bisa jadi temen. Semua yg udh ketemu dia pasti sependapat sama gw.`;
+            } else if (temp == "tipe32") {
+                temp_text =
+                    `This is the reason why gue uninstall fesbuk kebanyakan joke gajelas bapak bapak emak emak kemakan hoax, bocil bucin cheesy. i'm not generalsir sih big actually mostly emang gitu. Honestly gue emang literally udah 2 tahun gak main fesbuk, `+
+                    `even many people say banyak meme disana yang fresh and funny but fesbuk udah gak level for me udah gak worth itu digunain ditahun 2021 ini. I'm just like iyuhhh udah gak jaman.\nTwitter for me is the best platform sosmed sihh udah banyak drag `+
+                    `joke rakyatnya pada open minded saking open minded nya isi otaknya pun keliatan and most important thing is Twitter = deep web. Period n valid facebok could never😭😭😭`;
+            } else if (temp == "tipe33") {
+                temp_text =
+                    `Yang mau daftar Vtube boleh langsung hubungi saya, saya bimbing sampe sukses, kapan lagi nonton iklan tapi dibayar?\n\nDaripada kalian nonton iklan di youtube tapi ga di bayar mending daftar Vtube.`+
+                    `\n\nKalian nanya apakah saya sudah menghasilkan dari Vtube? jelas sudah. alhamdulillah sekarang saya bisa beli ${nama} tanpa harus minta ke orang tua.\n\nTertarik? langsung chat fb saya. saya bimbing kalian sampe bisa seperti saya`+
+                    `\n\nSalam Vtubers indonesia\nGo diamond✨`;
+            } else if (temp == "tipe34") {
+                temp_text =
+                    `oke gue tau gue salah, dan gue pun udah minta maaf ke yang bersangkutan. demi apapun gue cuma iseng ke anak alter itu. then, can you guys stop it plis? im fucked up :) setiap manusia ngelakuin kesalahan right? just stop it ok.`;
+            } else if (temp == "tipe35") {
+                temp_text =
+                    `maaf bukannya apa ya, tpi jadi temen bisa ga si ngerti sedikit. apa apa aku apa apa aku, ngertiin perasaanku dikit bisa ga ?Sebenernya aku takut menyinggung kalian apa gimana, tapi aku pengen speak up. tolong jawab pertanyaan aku. Sudah makan kiko belum hari ini ?`;
+            } else if (temp == "tipe36") {
+                temp_text =
+                    `Tidak berniat body shaming tapi sebelum ngata-ngatain saya kenapa ${panggilan}nya tidak mencoba ngaca terlebih dahulu? Habis itu diet. Habis itu skincarean. Habis itu baca buku banyak banyak. Habis itu cari uang yg banyak. Baru deh ngatain saya biar ga malu-maluin diri sendiri.`;
+            } else if (temp == "tipe37") {
+                temp_text =
+                    `Gak maksud belain.. menurut gw karma dia itu cukup dilaporin ke pihak berwenang aja. Yakali dapet karma diakatain satu indonesia, kalo gw pasti sedih banget belum lagi mental pasti kena. Ibarat maling yang di pukulin sampe babak belur baru di laporin. Menurut gw.`;
+            } else if (temp == "tipe38") {
+                temp_text =
+                    `Di luar kemampuan pala u mletak. Apa susahnya sih spreading awareness lewat share link petisi or donate bc she obv got some money for that? Kalo ga ya encouraging followersnya buat sign apa donate jg? It ain't hard at all anjir. It just takes a few minutes. Smh`;
+            } else if (temp == "tipe39") {
+                temp_text =
+                    `That was not funny. Not amused. Not a laugh. Not a chuckle. Not a Haha or even a hehe. That was not funny at all. I would be embarrassed if i were you. You need a tutor on comedy and on humor cuz this just aint it. It was terrible. It was horrible. It was NOT funny`;
+            } else if (temp == "tipe40") {
+                temp_text =
+                    `Whatt?? softt?? helllo!!! hellloo!! emg bener kalo org cewek apa cwok tu kalo manggung pake bedak! tp bukan kayak Bias bias luu pada! yangg kegilaanya super the best banget gilanya... Pake highlight segala toh??? trs pake sunblock jg.. Wowowowow , Muka mukanya kayak cewek smuaa ?`;
+            } else if (temp == "tipe41") {
+                temp_text =
+                    `Influencers can make excuses "my platform, my choice." No. People GAVE you that platform. Payback what you earned by speaking up for the oppressed. It's like tax, but for your fame. Call it influence redistribution (and add some wealth redistribution to that too, you cheapasses).`;
+            } else if (temp == "tipe42") {
+                let kebalikan = (panggilan == "cowok" ? "cewek" : 'cowok');
+                temp_text =
+                    `susah bgt jd ${panggilan}, pengen bebas berekspresi dengan upload foto self love, eh malah dijadiin bacol ama ${kebalikan} ${kebalikan} sagapung`;
+            } else if (temp == "tipe43") {
+                temp_text =
+                    `punya ketikan dijaga bisa gasi?\nga mikirin perasaan orang lain?\ngila ga nyangka banget gue kayak gitu kelakuan lo, sumpah mau lo apasi? sekarang gue tanya balik, udah makan es kiko blm hari ini sayang?`;
+            } else if (temp == "tipe44") {
+                temp_text =
+                    `gue bingung deh mbaknya kan alter ya? kok sakit hati sih dimintain pap tt? bukannya itu udh jadi makanan sehari-hari? jangan jadi alter mbak kalo ga terima dimintain gituan, kocak deh ckck`;
+            } else if (temp == "tipe45") {
+                temp_text =
+                    `Please banget berhenti hujat gua, gua tau gua pantas dihujat. Tpi jujur gua bener2 down. Ini gua udh minta maaf karena kalian suruh, dan juga kemauan gua sendiri untuk minta maaf. Please banget udahan, gua mohon banget buat semuanya 🙏😭`;
+            } else if (temp == "tipe46") {
+                temp_text =
+                    `udh stop please gua ngedown banget sumpah. gua tau gua jahat, iya gua jahat. udh stop gua mohon. gua nangis sampe gada suara, karena gua takut orang tua gua denger dan nanya2 ke gua. gua mohon banget please udah, pikiran gua dari tadi udah macem2. please stop 🙏😭`;
+            } else if (temp == "tipe47") {
+                temp_text =
+                    `Oke maaf sekiranya gua emg salah, tpi jujur gua ga tau apa2. Lu percaya sekarang gua nangis? Mungkin engga. Karena kalian ngira gua badutkan ngechat sama diri sendiri? Gila ga sih gua ngadu domba antar fandom?\n\nPlease banget berhenti hujat gua, gua tau gua pantas dihujat.`;
+            } else if (temp == "tipe48") {
+                temp_text =
+                    `Bukan level saya untuk berurusan dengan kalian semua. Salam sukses para SJW. Oh iya sekali lagi saya dgn rendah hati dan sedalam" nya ingin bilang: "Dasar Warga Twitter!"`;
+            } else if (temp == "tipe49") {
+                temp_text =
+                    `makasih teman teman yang semangatin aku, selanjutnya bakal aku keep sendiri & mutual deket aja. Maaf ya udah "kotorin" tl kalian dengan kisah cringe gini. Kalau kalian beranggapan ini settingan, itu hak kalian, asal jangan terlalu berlebihan sampai dm & mengganggu 😊🙏`;
+            } else if (temp == "tipe50") {
+                temp_text =
+                    `Bukan mau ikut campur urusan please do not ever do that again nih ya, tapi menurutku sih kala ku pandang kerlip bintang nan jauh di sana, sayup terdengar melodi cinta yang menggema, terasa kembali gelora jiwa mudaku, karna tersentuh alunan lagu semerdu kopi dangdut`;
+            } else if (temp == "tipe51") {
+                temp_text =
+                    `sekedar mengingatkan kalo twitter ini tempat paling bebas di dunia, bebas berpendapat, bebas berekspresi, bebas menjadi siapa saja, asal paham bahwa semua ada konsekuensi dan ditanggung masing2\n\nmenurut hemat gw sih, twitter itu ibarat darkwebnya sosmed, sayang bgt kalo dibaperin`;
+            } else if (temp == "tipe52") {
+                temp_text =
+                    `ini bkn settingan. Tpi kalau kabar buruk muncul duluan diawal mungkin susah percaya sm yg asli, it's up to u mau percaya yg mna. Ak uda cba ngmng sebaik mungkin biar kalian percaya. Kalau risih bsa unfoll. Oiya, Ak & ${nama} uda resmi pacaran kita bakal cba jdi manusia yg lebih baik`;
+            } else if (temp == "tipe53") {
+                temp_text =
+                    `ah panass..ahh waktunya kiko..selalu sedia kiko dirumah..wahhhhh kikoo.....heheheh...eh aku mau dong..wah segerrr..emmm..enak tauu..wah ibu hebat tau banget yg kita suka..hahhh..ehhh..ups..haa bagi dua..emm..lagi makan kikoo...maaa minta kikooo..kiko enak tau`;
+            } else if (temp == "tipe54") {
+                temp_text =
+                    `A A A ACEHHHH\n💢💢💢🥁🥁🥁😃😃\niNDOMY GORENGG AA AA ACEEHH💢🥁🥁😁😆 iNDOMY GORENGG💢💢💢🥁🥁😟😟 A A A ACEHHH💢💢🥁🥁🥁😠 iNDOMY GORENGG!!!💢💢🥁🥁🥁 🤯🤯🤯AAAAAAAACEHHHH😱🥁💢💢indomY goreng aceh kkayaan rmpah n ktebalan mie nya,,, uWAHHH ASLI BIKIN SMANGATT💢💢🥁🥁🤯🤯🤯😆`;
+            } else if (temp == "tipe55") {
+                nama = nama.toUpperCase();
+                temp_text =
+                    `ADA BEBERAPA ORANG YANG BILANG ${nama} ITU PANJAT SOSIAL. WOY BEGO! ${nama} STATUS SOSIALNYA UDAH TINGGI, DIA KETURUNAN DARAH BIRU KERABATNYA RAJA, AYAHNYA JUGA CEO & DIREKTUR PERUSAHAAN BESAR, DIA TERLAHIR UDAH KAYA.. SO BUAT APA PANSOS??`;
+            } else if (temp == "tipe56") {
+                temp_text =
+                    `Sorry ya yg ke unfol buat kamu, greget aja dr kemarin soalnya kamu sok ngartis, jbjb jarang, like jarang juga. Main Twitt masih milih" akun. Kamu di ig baru pantes. Soalnya mutualku hrs welcome kesemuanya ga sok ngartis. So yg ke unfoll sorry berarti situ emang sok ngartis okey`;
+            } else if (temp == "tipe57") {
+                temp_text =
+                    `Baru diginiin baru pada nongol jbjb wkwk anjir kamu tuh minta aku cubit tau gaksih pipinya. Heh kamu klo di ig begitu sih santuy. Loh kamu disini mau merasa seleb mah gacocok di Twitter tuh tempat nya berbaur bukan yg milih" mutualan🙃`;
+            } else if (temp == "tipe58") {
+                temp_text =
+                    `platform lu gede amat why don’t you use that to speak up for once instead of breaking your back for twitter`;
+            } else if (temp == "tipe59") {
+                temp_text =
+                    `mentang mentang cari duit, beliin anak sembarangan. baru plg uda dimarahin, ngajak berantem?. kmu sih... euuhh.. eh jangan berantem duluu, ini cuma permen milkita, ini permen mahal.. 3 loli milkita setara dgn segelas susu.. milkita! sehat, cerdas, ceria.. dari unifarm`;
+            } else if (temp == "tipe60") {
+                temp_text =
+                    `sebenernya ini pendapatku sih, jd itu perhitungan mungkin aja bener, karena ada ilmu buat pelajarin tanda2 namanya semiotika, angka adalah tanda, huruf adalah tanda, tanda dr alam`;
+            } else if (temp == "tipe61") {
+                temp_text =
+                    `Dek km jangan masuk kan poto porno ke fb ya hapus poto itu Bunda tidak sukak dgn poto kayak itu mengganggu d grup Pencinta Lagu India dan Artis Bollywood,km mengerti,km masih SD ya km kls berapa syg,hati2 belajar ya biar jadi anak yg pintar ya km usaha kan nilai belajar d sekolah`;
+            } else if (temp == "tipe62") {
+                temp_text =
+                    `Is bullying other people really makes you happy ? I do remain silent when you quoting my first tweet. You did stalk me just so you can make fun of me? Its twice now. Youre happy ? Cmon, behave dude.`;
+            } else if (temp == "tipe63") {
+                temp_text =
+                    `baik kak. sederhana. saya gamau ada kimia di badan saya. ini pilihan saya. se simpel itu kak. ga peduli apa konspirasi nya. ini cuman pilihan terbaik untuk badan saya. saya geram aja td ada yg hina seorang ayah yg anaknya lebih sehat tanpa vaksin dan banyak yg likes hinaan nya`;
+            } else if (temp == "tipe64") {
+                temp_text =
+                    `${nama} di twitter dan ${nama} di real life adalah org yg beda. aku yg asli. sensitif. super sesitif. dulu aku gak pernah tanggepin org yg komentar miring karena yg ngehujat aku gak aku kenal. tpi ktika ada yg dikenal & ikutan itu yg bikin aku tau aku gk punya temn dan bkin aku terluka`;
+            } else if (temp == "tipe65") {
+                temp_text =
+                    `Daripada lu komentarin tweet gue yg udah beberapa jam lalu, mening lo stalk tweet gue sampai lo nemu alasan knp gue bisa berkomentar kayak gitu dan endingnya apa yg gue sampaikan. Terima kasih & selamat sore`;
+            } else if (temp == "tipe66") {
+                temp_text =
+                    `oh iya kalo lupa no wonder sih, cause there’s a lot of girls u slept with, and ofc you didnt know me karena kita dm-an not with this acc. ga ngira ini bakal rame & sampe ke akun lo sih, sehat sehat terus pay! salam dari yang pernah fotoin endorse lo 😂👋🙏 sekian wasalam`;
+            } else if (temp == "tipe67") {
+                temp_text =
+                    `iya bujang iya, paham aku, kelen lah manusia paling pintar emejing sejagat raya ini, paling paham semua tentang isu sosial, negara, internasional, hingga isu rumah tangga tetangga kelen, ampun bang, ampun jangenam, salah aku, kelen paling top pokoknya, paling mantap`;
+            } else if (temp == "tipe68") {
+                temp_text =
+                    `I just texted my team about work stuff at 00:44 on a Saturday.\nPeople think working with me is fun & filled with laughter. Entrepreneur Aku is very much different with Entertainer Aku. I push people. Im demanding. And i dont mince words. Plus, i fire people quick.`;
+            } else if (temp == "tipe69") {
+                temp_text =
+                    `aku udah ngerti bahwa ada baiknya aku jauh dari twitter untuk berpendapat (pendapatku bisa jadi sangat bias dan sangat sempit), maka dari itu aku berusaha untuk jauh dari twitter sebisa mungkin. tapi aku mohon, jangan kejar aku ke instagram ya? it’s my only safe place to create`;
+            } else if (temp == "tipe70") {
+                temp_text =
+                    `setiap perkataan pasti ada kesalahan apalagi saya hanya manusia yang sempurna, sebelum saya tutup sambutan saya ini, lebih baiknya dilanjutkan. saya mohon maaf jika ada hal yang kurang berkenan di hati saudara, sekian dan terima kasih. wassalamu alaikum. wr. wb.`;
+            } else if (temp == "tipe71") {
+                temp_text =
+                    `Indonesia is a shitty country, they should be happy that people want to come to their country and spend money. But if they aren’t , they are free to ban all tourism and we can ban them as well. It’s simple`;
+            } else if (temp == "tipe72") {
+                temp_text =
+                    `Woah hanging there baby, which words that i said im bullying u? I didnt say anyy words in there. And u already mention it if im a woman i wouldnt say that. And violaaa im noot. And dont u forget that u r the one who shaming ur own self. By called ur self fat, ugly and etc..`;
+            } else if (temp == "tipe73") {
+                temp_text =
+                    `Liat dulu keadaan badannya, cocok gak yang diplagiatin ama anak saya? Kalo anak saya mah bener-bener caaaan tiiik. Badan juga baaa guus ehehe, siapa dulu yg diplagiatin? Ngaca dulu kaliii, yaaa??`;
+            } else {
+                temp_text = 'HADEH PILIH YANG BENER';
+            }
+
+            $("#hasilnya").show();
+            $('#hasil').val(temp_text.trim());
+            $('#hasil').highlightWithinTextarea({
+                highlight: [
+                    { highlight: nama, className: 'blue' },
+                    { highlight: nama2, className: 'blue' },
+                    { highlight: nama_fans, className: 'green' },
+                    { highlight: status, className: 'purple' },
+                    { highlight: kekurangan, className: 'yellow' },
+                    { highlight: kelebihan, className: 'red' },
+                    { highlight: jenis_karakter, className: 'orange' },
+                    { highlight: status_idola, className: 'pink' },
+                ]
+            });
+        }
+    </script>
+<script>
+        let clipboard = new ClipboardJS('.kopi');
+        clipboard.on('success', function (e) {
+            $("#tercopy").show();
+
+            e.clearSelection();
+        });
+    </script>
+</body>
+
+</html>
