@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>TikTok Downloader</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">TikTok Downloader</h1>
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="videoUrl">TikTok Video URL</label>
+                        <input type="text" class="form-control" id="videoUrl" placeholder="Enter TikTok video URL">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="downloadVideo()">Download</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function downloadVideo() {
+            var videoUrl = document.getElementById("videoUrl").value;
+            
+            // Remove whitespace from the URL
+            videoUrl = videoUrl.trim();
+            
+            // Extract the TikTok video ID from the URL
+            var videoId = extractVideoId(videoUrl);
+            
+            // Generate the download link for the TikTok video
+            var downloadUrl = generateDownloadUrl(videoId);
+            
+            // Trigger the download
+            downloadFile(downloadUrl);
+        }
+        
+        function extractVideoId(url) {
+            var match = url.match(/tiktok\.com\/@([^/]+)\/video\/(\d+)/);
+            if (match && match[2]) {
+                return match[2];
+            } else {
+                alert("Invalid TikTok video URL");
+                return null;
+            }
+        }
+        
+        function generateDownloadUrl(videoId) {
+            if (videoId) {
+                // Modify this URL pattern to match your preferred TikTok video download service
+                return "https://example.com/download?videoId=" + videoId;
+            } else {
+                return null;
+            }
+        }
+        
+        function downloadFile(url) {
+            if (url) {
+                var link = document.createElement("a");
+                link.href = url;
+                link.download = "tiktok_video.mp4";
+                link.click();
+            } else {
+                alert("Failed to generate download link");
+            }
+        }
+    </script>
+</body>
+</html>
