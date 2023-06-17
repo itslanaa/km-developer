@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jadwal Ujian Akhir Semester</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .table-responsive {
+      margin-top: 20px;
+    }
+
+    /* Styling selang-seling warna pada baris tabel */
+    tbody tr:nth-of-type(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tbody tr:nth-of-type(even) {
+      background-color: #e0e0e0;
+    }
+
+    /* Mengurangi kecerahan warna hitam */
+    tbody tr:nth-of-type(odd) td {
+      filter: brightness(95%);
+    }
+
+    tbody tr:nth-of-type(even) td {
+      filter: brightness(92%);
+    }
+
+    /* Invisible teks pada saat print */
+    @media print {
+    .hide-on-print {
+        display: none;
+    }
+    }
+
+    
+    /* Penyesuaian tampilan tabel untuk layout responsif */
+    @media (max-width: 576px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      
+      thead, tbody, th, td, tr {
+        display: block;
+      }
+      
+      td, th {
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-4">Jadwal Ujian Akhir Semester PS. Ilkom-A</h1>
+    <p class="text-center hide-on-print">
+      Untuk melakukan print jadwal 
+      <button class="btn btn-primary" onclick="printTable()">Klik Disini</button>
+    </p>
+    <p class="text-center hide-on-print">by : <a href="https://instagram.com/_kakamaulana">@_kakamaulana</a></p>
+    <p class="text-center hide-on-print">ingfo lainnya? <a href="ingfo.html">disini yaa</a></p>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Hari, Tanggal</th>
+            <th>Mata Kuliah</th>
+            <th>Jam Ujian</th>
+            <th>Ruang Ujian</th>
+            <th>Dosen Pengampu</th>
+            <th colspan="2">Pengawas Ujian</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Selasa, 20-06-2023</td>
+            <td>Bahasa Inggris Untuk TI</td>
+            <td>08:30 - 10:00</td>
+            <td>GPS 3A-2</td>
+            <td>Dr. Henny Suharyati, M.A.</td>
+            <td>Mohamad Iqbal Suriansyah, S.Kom., M.Kom</td>
+            <td>Suherman</td>
+          </tr>
+          <tr>
+            <td>Aljabar Linear Matriks</td>
+            <td>14:45 - 16:15</td>
+            <td>GPS 504</td>
+            <td>Irma Anggraeni, M.Kom</td>
+            <td>Dr. Ir. Hermawan</td>
+            <td>Nurhasanah</td>
+          </tr>
+          <tr>
+            <td>Rabu, 21-06-2023</td>
+            <td>Statistika Informatika</td>
+            <td>13:00 - 14:30</td>
+            <td>GPS 505</td>
+            <td>Prof. Dr. Sri Setyaningsih, M.Si.</td>
+            <td>Cantika Zaddana, S.Gz., M.Si.</td>
+            <td>Resdianto Affandi</td>
+          </tr>
+          <tr>
+            <td>Kamis, 22-06-2023</td>
+            <td>Sistem Instrumentasi</td>
+            <td>10:15 - 11:45</td>
+            <td>GPS 3A-1</td>
+            <td>Agus Ismangil, M.Si.</td>
+            <td>Dr. apt. Bina Lohitasari, M.Pd., M.Farm.</td>
+            <td>Angela Maryam B., S.Si</td>
+          </tr>
+          <tr>
+            <td>Jum'at, 23-06-2023</td>
+            <td>Sistem Instrumentasi</td>
+            <td>13:00 - 14:30</td>
+            <td>GPS 504</td>
+            <td>Tatang Muhajang, M.Ag.</td>
+            <td>Dr. Ir. Hermawan</td>
+            <td>Nurjaya</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Senin, 26-06-2023</td>
+            <td>Matematika Diskrit</td>
+            <td>08:30 - 10:00</td>
+            <td>GPS 504</td>
+            <td>Dr. Tjut Awaliyah Z., M.Kom.</td>
+            <td>Siti Mahyuni, S.Si., M.Si.</td>
+            <td>Siti Nurhayati Sari, SM.</td>
+          </tr>
+          <tr>
+            <td>Organisasi dan Arsitektur Komputer</td>
+            <td>13:00 - 14:30</td>
+            <td>GPS 505</td>
+            <td>Agung Prajuhana Putra, M.Kom.</td>
+            <td>apt. Lusi Agus Setiani, S.Farm., M.Farm.</td>
+            <td>Yanu Nurmansyah, S.Kom.</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Selasa, 27-06-2023</td>
+            <td>Bahasa Indonesia</td>
+            <td>08:30 - 10:00</td>
+            <td>GPS 3A-1</td>
+            <td>Sasongko S Putro, M.Hum.</td>
+            <td>apt. Nyayu Siti Aminah Lily Elfrida, M.Farm.</td>
+            <td>Devi Kurniasari</td>
+          </tr>
+          <tr>
+            <td>Algoritma Pemrograman & Struk.Data</td>
+            <td>14:45 - 16:15</td>
+            <td>GPS 3A-6</td>
+            <td>Prof. Dr.-Ing. Soewarto Hardhienata / Drs. Syarif Hidayatullah, M.Kom.</td>
+            <td>Zaldy Rusly, S.Farm., M.Farm.</td>
+            <td>Dina Agustina, S.Si</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function printTable() {
+      window.print();
+    }
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
