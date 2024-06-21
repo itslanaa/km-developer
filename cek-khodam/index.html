@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Khodam</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="mb-4">Generator Khodam</h1>
+    <div class="form-group">
+        <label for="nameInput">Masukkan nama Anda:</label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Masukkan nama">
+    </div>
+    <button class="btn btn-primary" onclick="generateKhodam()">Tampilkan Khodam</button>
+    
+    <div id="result" class="mt-4 alert alert-info" role="alert" style="display: none;"></div>
+</div>
+
+<script>
+    const khodams = [
+        { name: "Naga Metal", description: "Seekor naga yang sangat suka musik metal, selalu mengadakan konser di atas awan." },
+        { name: "Siluman Biyawak", description: "Suka nongkrong di pinggir jalan dan menggoda pengendara motor yang lewat." },
+        { name: "Kuntilanak Stand Up", description: "Hantu kuntilanak yang sering membuat lelucon lucu di malam hari." },
+        { name: "Pocong Skateboard", description: "Pocong yang ahli bermain skateboard dan sering beraksi di jalanan sepi." },
+        { name: "Genderuwo Tukang Gosip", description: "Suka menyebarkan gosip di kalangan makhluk halus dan manusia." },
+        { name: "Buto Ijo Yoga", description: "Raksasa hijau yang rajin melakukan yoga setiap pagi di tengah hutan." },
+        { name: "Kuyang Kpop", description: "Suka menari dan bernyanyi mengikuti lagu-lagu Kpop di malam hari." },
+        { name: "Wewe Gombel Chef", description: "Ahli memasak berbagai macam makanan lezat dari dunia lain." },
+        { name: "Sundel Bolong Fashionista", description: "Selalu tampil dengan busana terbaru dan menjadi trendsetter di kalangan hantu." },
+        { name: "Tuyul Gamer", description: "Suka bermain game online dan sering memenangkan turnamen antar makhluk halus." }
+    ];
+
+    function generateKhodam() {
+        const name = document.getElementById('nameInput').value;
+        if (name.trim() === "") {
+            alert("Silakan masukkan nama Anda.");
+            return;
+        }
+
+        const khodam = khodams[Math.floor(Math.random() * khodams.length)];
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = `<p>Nama: <strong>${name}</strong></p>
+                               <p>Khodam: <strong>${khodam.name}</strong></p>
+                               <p>Penjelasan: ${khodam.description}</p>`;
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
